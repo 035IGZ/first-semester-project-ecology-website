@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Reciclagem</title>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" type="text/css" href="css/contato.css">
+        <link rel="shortcut icon" href="imagens/favicon.ico">
+    </head>
+    <body>
+        <div class="container">
+            <!--MENU-->
+            <div class="menu">
+                <img src="imagens/logo.png" class="logo">
+                <nav>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="sobre.html">SOBRE</a></li>
+                        <li><a href="#">CONTATO</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <form action="enviar-email.php" class="formulario" method="post">
+                <p> Envie uma mensagem preenchendo o formulário abaixo</p>
+
+                <div class="field">
+                    <label for="nome">Seu Nome:</label>
+                    <input type="text" id="nome" name="nome" placeholder="Digite seu nome*" required>
+                </div>
+
+                <div class="field">
+                    <label for="telefone">Seu Telefone:</label>
+                    <input type="text" id="telefone" name="telefone" placeholder="Digite seu Telefone">
+                </div>
+
+                <div class="field">
+                    <label for="email">Seu E-Mail:</label>
+                    <input type="email" id="email" name="email" placeholder="Digite seu E-Mail*" required>
+                </div>
+                <div class="field radiobox">
+                    <span>Deseja receber nossas novidades?</span>
+                    <input type="radio" name="novidades" id="sim" value="sim" checked><label for="sim">Sim</label>
+                    <input type="radio" name="novidades" id="nao" value="nao"><label for="nao">Não</label>
+                </div>
+                <div class="field">
+                    <label for="mensagem">Sua mensagem:</label>
+                    <textarea name="mensagem" id="mensagem" placeholder="Mensagem*" required></textarea>
+                </div>
+
+                <a href="index.html"><button type="button" name="button">Enviar</button></a>
+            </form>
+        </div>
+        <footer>
+            <div class="footer">
+            <h3>Reciclagem</h3>
+            <p class="pfooter">Há momentos que precisamos reciclar o ambiente, as amizades e até mesmo a forma com que encaramos a vida.</p>
+            </div>
+            <div class="footer-baixo">
+            <p>Copyright &copy;2021. Designed by <span>Reciclagem</span></p>
+            </div>
+        </footer>
+    </body>
+</html>
